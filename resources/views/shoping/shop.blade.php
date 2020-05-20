@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' name='viewport'/>
-    <title>Home Fashion - Neostore</title>
+    <title>Shop Grid Left Sidebar - Neostore</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="shortcut icon" type="image/png" href="assets/images/fav.png"/>
+    <link rel="shortcut icon" type="image/png" href="{{asset('assets/images/fav.png')}}"/>
 
     <!--Stylesheets -->
 
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="{{asset('assets/css/main.css')}}" rel="stylesheet">
 
     <!--Google font-->
     <link
@@ -20,7 +20,7 @@
         rel="stylesheet">
 </head>
 
-<body class="home">
+<body>
 <div id="wrap">
     <header>
         <div class="top-bar bg-dark">
@@ -36,7 +36,8 @@
                         <div class="lang">
                             <div class="dropdown">
                                     <span class="drop-down-toggle">
-                                        <img src="assets/images/flag1.png" alt=""> Eng <i class="fa fa-angle-down"></i>
+                                        <img src="{{asset('assets/images/flag1.png')}}" alt=""> Eng <i
+                                            class="fa fa-angle-down"></i>
                                     </span>
                                 <ul class="drop-link trans">
                                     <li><a href="#" class="bg-dark">English</a></li>
@@ -74,15 +75,14 @@
 
                         <div class="header-cart">
                             <a href="#" class="crt-btn drop-cart pe-7s-cart">
-                                <span class="pri-bg radius-circle pri-font">4</span>
+                                <span class="pri-bg radius-circle pri-font">2</span>
                             </a>
-
-                            <div class="widget widget_shopping_cart">
+                            <div class="widget widget_shopping_cart ">
                                 <h5 class="title">Your cart have (<span>2</span> Items)</h5>
                                 <ul class="neo-mini-cart">
                                     <li class="item">
                                         <figure class="product-thumb">
-                                            <a href="#"><img src="assets/images/cart-pdt-thumb3.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('assets/images/cart-pdt-thumb3.jpg')}}" alt=""></a>
                                         </figure>
                                         <!--product thumb-->
 
@@ -96,7 +96,7 @@
 
                                     <li class="item">
                                         <figure class="product-thumb">
-                                            <a href="#"><img src="assets/images/cart-pdt-thumb1.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('assets/images/cart-pdt-thumb1.jpg')}}" alt=""></a>
                                         </figure>
                                         <!--product thumb-->
 
@@ -131,7 +131,7 @@
             <div class="container">
                 <div class="header-mid">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                        <a class="navbar-brand" href="index.html"><img src="{{asset('assets/images/logo.png')}}" alt=""></a>
                         <!--<a class="navbar-brand site-brand" href="index.html">neostore</a>-->
 
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -146,7 +146,7 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active menu-item-has-children">
+                            <li class="menu-item-has-children">
                                 <a href="#">HOME</a>
                                 <ul class="sub-menu">
                                     <li><a href="index.html">Home V1</a></li>
@@ -157,7 +157,7 @@
                                 </ul>
                             </li>
 
-                            <li class="menu-item-has-children mega-menu">
+                            <li class="active menu-item-has-children mega-menu">
                                 <a href="#">shop</a>
 
                                 <div class="mega-wrap">
@@ -259,151 +259,147 @@
                 <form class="search-form">
                     <input class="search-input" type="search" placeholder="Search..."/>
                 </form>
+                <!--header mid-->
             </div>
         </nav>
     </header>
     <!--header-->
 
-    <div class="hero-banner">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <div class="fs_loader"></div>
-
-                <div class="slide">
-                    <img src="assets/images/fashion/slider-bg3.jpg" alt="" data-in="fade">
-
-                    <h3 data-position="360,230" data-in="top" data-delay="200" class="pri-color text-uppercase ">
-                        Everything</h3>
-
-                    <h2 data-position="410,220" data-in="top" data-delay="300" class="pri-font">
-                        <strong>UPTO <span class="pri-color">30<sup>%<br>OFF</sup></span></strong>
-                    </h2>
-
-                    <h3 data-position="550,220" data-in="top" data-delay="300" class=" text-uppercase text-box">In all
-                        ladies items !</h3>
+    <div class="pg-header jarallax overlay parlx-pad sec-mar">
+        <img class="jarallax-img" src="{{asset('assets/images/page-title.jpg')}}" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <h2>Shop grid left sidebar</h2>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Shop</li>
+                    </ul>
                 </div>
-                <!--slide 1-->
-
-                <div class="slide">
-                    <img src="assets/images/fashion/slider-bg4.jpg" alt="" data-in="fade">
-
-                    <h2 data-position="400,220" data-in="top" data-delay="300" class="pri-font">
-                        <strong>GET <span class="pri-color">30<sup>%<br>OFF</sup></span></strong>
-                    </h2>
-
-                    <h3 data-position="550,220" data-in="top" data-delay="300" class=" text-uppercase text-box">In all
-                        ladies items !</h3>
-                </div>
-                <!--slide 2-->
             </div>
         </div>
     </div>
-    <!--banner-->
+    <!--page title-->
 
     <main class="main">
-        <div class="shop-feature sec-mar sec-padding bg-soft-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 shp-ftr-wrap">
-                        <div class="feature-box">
-                            <h5><span class="icon icofont icofont-free-delivery"></span>Free Shipping</h5>
-                            <span class="sub-text">Free Delivery on orders above $40.</span>
+        <div class="container">
+            <div class="row sec-mar">
+                <div class="col-md-9 col-sm-9 pull-right left-blk">
+                    <div class="sorting-outer">
+                        <div class="sorting-wrap">
+                            Showing 1–12 of 292 results
+                            <button class="filter-btn">Filter <i class="fa fa-angle-down"></i></button>
                         </div>
+                        <!--sorting wrap-->
 
-                        <div class="feature-box">
-                            <h5><span class="icon icofont icofont-reply"></span>Return back</h5>
-                            <span class="sub-text">Return or exchange within 30 days.</span>
-                        </div>
+                        <div class="filter-toggle collapse bg-soft-gray">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="title"><h5>Sort by:</h5></div>
+                                    <form action="#">
+                                        <ul>
+                                            <li class="active"><a href="#">Default</a></li>
+                                            <li><a href="#">Popularity</a></li>
+                                            <li><a href="#">Average rating</a></li>
+                                            <li><a href="#">Newness</a></li>
+                                            <li><a href="#">Price: low to high</a></li>
+                                            <li><a href="#">Price: high to low</a></li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <!--sort by-->
 
-                        <div class="feature-box">
-                            <h5><span class="icon icofont icofont-money"></span>secure payment</h5>
-                            <span class="sub-text">We follow tursted payment method.</span>
-                        </div>
+                                <div class="col-sm-3">
+                                    <div class="title"><h5>filter by price:</h5></div>
+                                    <form action="#">
+                                        <ul>
+                                            <li class="active"><a href="#">All</a></li>
+                                            <li><a href="#">$0.00 - £150.00</a></li>
+                                            <li><a href="#">$150.00 - £200.00</a></li>
+                                            <li><a href="#">$200.00 - £500.00</a></li>
+                                            <li><a href="#">$500.00 - £800.00</a></li>
+                                            <li><a href="#">$800.00 +</a></li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <!--price filter-->
 
-                        <div class="feature-box">
-                            <h5><span class="icon icofont icofont-live-support"></span>24 / 7 support</h5>
-                            <span class="sub-text">Experince our best support system</span>
+                                <div class="col-sm-3">
+                                    <div class="title"><h5>filter by color:</h5></div>
+                                    <div class="color-filter">
+                                        <form>
+                                            <div class="check-wrap red">
+                                                <input type="checkbox">
+                                                <label>Red (20)</label>
+                                            </div>
+                                            <!--red-->
+
+                                            <div class="check-wrap black">
+                                                <input type="checkbox">
+                                                <label>Black (100)</label>
+                                            </div>
+                                            <!--black-->
+
+                                            <div class="check-wrap yellow">
+                                                <input type="checkbox">
+                                                <label>Yellow(20)</label>
+                                            </div>
+                                            <!--yellow-->
+
+                                            <div class="check-wrap blue">
+                                                <input type="checkbox">
+                                                <label>Blue (120)</label>
+                                            </div>
+                                            <!--blue-->
+                                        </form>
+                                    </div>
+                                </div>
+                                <!--color filter-->
+
+                                <div class="col-sm-3">
+                                    <div class="title"><h5>FILTER BY SIZE</h5></div>
+                                    <div class="size-filter">
+                                        <form>
+                                            <div class="radio-wrap">
+                                                <input type="radio" name="size">
+                                                <label>L</label>
+                                            </div>
+                                            <!--l-->
+
+                                            <div class="radio-wrap">
+                                                <input type="radio" name="size">
+                                                <label>XL</label>
+                                            </div>
+                                            <!--xl-->
+
+                                            <div class="radio-wrap">
+                                                <input type="radio" name="size">
+                                                <label>M</label>
+                                            </div>
+                                            <!--m-->
+
+                                            <div class="radio-wrap">
+                                                <input type="radio" name="size">
+                                                <label>S</label>
+                                            </div>
+                                            <!--s-->
+
+                                            <div class="radio-wrap">
+                                                <input type="radio" name="size">
+                                                <label>X</label>
+                                            </div>
+                                            <!--x-->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!--filter toggle-->
+
                     </div>
-                    <!--support-->
-                </div>
-            </div>
-        </div>
-        <!--shop feature-->
+                    <!--sorting outer-->
 
-        <div class="fet-cat sec-mar gutter-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <div class="fet-box cat-2 top-left text-white border bm-10">
-                            <figure>
-                                <a href="#" class="link-layer">&nbsp;</a>
-
-                                <h2 class="text-uppercase">
-                                    <span>new summer</span>
-                                    collection
-                                </h2>
-                                <img src="assets/images/fashion/cat-summer.jpg" alt="summer">
-                            </figure>
-                        </div>
-                        <!--first-->
-
-                        <div class="fet-box cat-2 bottom-left">
-                            <figure>
-                                <a href="#" class="link-layer">&nbsp;</a>
-
-                                <h2 class="text-uppercase">
-                                    <span>new men's</span>
-                                    collection
-                                </h2>
-                                <img src="assets/images/fashion/cat-mens.jpg" alt="men">
-                            </figure>
-                        </div>
-                        <!--second-->
-                    </div>
-                    <!--left-->
-
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <div class="fet-box cat-2 center-right text-white border bm-10">
-                            <figure>
-                                <a href="#" class="link-layer">&nbsp;</a>
-                                <h2 class="text-uppercase">
-                                    <span>new ladie's</span>
-                                    collection
-                                </h2>
-                                <img src="assets/images/fashion/cat-ladies.jpg" alt="ladies">
-                            </figure>
-                        </div>
-                        <!--third-->
-
-                        <div class="fet-box cat-2 center-left heilight">
-                            <figure>
-                                <a href="#" class="link-layer">&nbsp;</a>
-                                <h2 class="text-uppercase">
-                                    <span>kid's</span>
-                                    collection
-                                </h2>
-                                <img src="assets/images/fashion/cat-acc.jpg" alt="accessories">
-                            </figure>
-                        </div>
-                        <!--third-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--feature category-->
-
-        <div class="feature-item sec-mar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <div class="title mid-sep">
-                            <h2>Featured items</h2>
-                        </div>
-                    </div>
-                    <!--title bar-->
-
-                    <div class="col-md-12 col-sm-12 col-xs-12 product-wrap">
+                    <div class="product-wrap product-listing">
                         <ul class="products">
                             <li class="product">
                                 <figure class="img-animi">
@@ -418,7 +414,7 @@
                                            data-placement="top" data-rel="quickview-popup" title="Quick View"><i
                                                 class="pe-7s-look"></i></a>
                                     </div>
-                                    <a href="#"><img src="assets/images/product1.jpg" alt=""></a>
+                                    <a href="#"><img src="{{asset('assets/images/product1.jpg')}}" alt=""></a>
                                 </figure>
 
                                 <div class="price-wrap">
@@ -432,7 +428,7 @@
                                     </div>
                                 </div>
 
-                                <h4><a href="#">Synergistically deliver</a></h4>
+                                <h4><a href="#">Ladies black full sleeves</a></h4>
                             </li>
                             <!--product-->
 
@@ -450,8 +446,8 @@
                                            data-placement="top" data-rel="quickview-popup" title="Quick View"><i
                                                 class="pe-7s-look"></i></a>
                                     </div>
-                                    <a href="#" class="front"><img src="assets/images/product2.jpg" alt=""></a>
-                                    <a href="#" class="back"><img src="assets/images/product6.jpg" alt=""></a>
+                                    <a href="#" class="front"><img src="{{asset('assets/images/product2.jpg')}}" alt=""></a>
+                                    <a href="#" class="back"><img src="{{asset('assets/images/product6.jpg')}}" alt=""></a>
                                 </figure>
 
                                 <div class="price-wrap">
@@ -464,11 +460,11 @@
                                     </div>
                                 </div>
 
-                                <h4><a href="#">Distinctively extend</a></h4>
+                                <h4><a href="#">Mens Shirt</a></h4>
                             </li>
                             <!--product-->
 
-                            <li class="product flip">
+                            <li class="product flip last">
                                 <figure class="img-animi">
                                     <div class="actions trans">
                                         <a class="link-layer" href="#">&nbsp;</a>
@@ -481,9 +477,8 @@
                                            data-placement="top" data-rel="quickview-popup" title="Quick View"><i
                                                 class="pe-7s-look"></i></a>
                                     </div>
-
-                                    <a href="#" class="front"><img src="assets/images/product3.jpg" alt=""></a>
-                                    <a href="#" class="back"><img src="assets/images/product1.jpg" alt=""></a>
+                                    <a href="#" class="front"><img src="{{asset('assets/images/product3.jpg')}}" alt=""></a>
+                                    <a href="#" class="back"><img src="{{asset('assets/images/product1.jpg')}}" alt=""></a>
                                 </figure>
 
                                 <div class="price-wrap">
@@ -497,7 +492,68 @@
                                     </div>
                                 </div>
 
-                                <h4><a href="#">Quickly transform flexible</a></h4>
+                                <h4><a href="#">Ladies black top</a></h4>
+                            </li>
+                            <!--product-->
+
+                            <li class="product">
+                                <figure class="img-animi">
+                                    <div class="actions trans">
+                                        <a class="link-layer" href="#">&nbsp;</a>
+
+                                        <a href="#" class="actn add-to-favorite" data-toggle="tooltip"
+                                           data-placement="top" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
+                                        <a href="#" class="actn add-to-cart" data-toggle="tooltip" data-placement="top"
+                                           title="Add to Cart"><i class="pe-7s-cart"></i></a>
+                                        <a href="#quick-view-popup" class="actn" data-toggle="tooltip"
+                                           data-placement="top" data-rel="quickview-popup" title="Quick View"><i
+                                                class="pe-7s-look"></i></a>
+                                    </div>
+                                    <a href="#"><img src="{{asset('assets/images/product4.jpg')}}" alt=""></a>
+                                </figure>
+
+                                <div class="price-wrap">
+                                    <div class="price">
+                                        <del>$99.00</del>
+                                        <ins>$95.00</ins>
+                                    </div>
+                                    <div class="star-rate">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star-half-full"></i>
+                                    </div>
+                                </div>
+
+                                <h4><a href="#">Ladies blue jeans</a></h4>
+                            </li>
+                            <!--product-->
+
+                            <li class="product">
+                                <figure class="img-animi">
+                                    <div class="actions trans">
+                                        <a class="link-layer" href="#">&nbsp;</a>
+
+                                        <a href="#" class="actn add-to-favorite" data-toggle="tooltip"
+                                           data-placement="top" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
+                                        <a href="#" class="actn add-to-cart" data-toggle="tooltip" data-placement="top"
+                                           title="Add to Cart"><i class="pe-7s-cart"></i></a>
+                                        <a href="#quick-view-popup" class="actn" data-toggle="tooltip"
+                                           data-placement="top" data-rel="quickview-popup" title="Quick View"><i
+                                                class="pe-7s-look"></i></a>
+                                    </div>
+                                    <a href="#"><img src="{{asset('assets/images/product5.jpg')}}" alt=""></a>
+                                </figure>
+
+                                <div class="price-wrap">
+                                    <div class="price">
+                                        <ins>$119.00</ins>
+                                    </div>
+                                    <div class="star-rate">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star-half-full"></i>
+                                    </div>
+                                </div>
+
+                                <h4><a href="#">Ladies half jacket</a></h4>
                             </li>
                             <!--product-->
 
@@ -514,68 +570,7 @@
                                            data-placement="top" data-rel="quickview-popup" title="Quick View"><i
                                                 class="pe-7s-look"></i></a>
                                     </div>
-                                    <a href="#"><img src="assets/images/product4.jpg" alt=""></a>
-                                </figure>
-
-                                <div class="price-wrap">
-                                    <div class="price">
-                                        <del>$99.00</del>
-                                        <ins>$95.00</ins>
-                                    </div>
-                                    <div class="star-rate">
-                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                            class="fa fa-star"></i><i class="fa fa-star-half-full"></i>
-                                    </div>
-                                </div>
-
-                                <h4><a href="#">Energistically promote</a></h4>
-                            </li>
-                            <!--product-->
-
-                            <li class="product">
-                                <figure class="img-animi">
-                                    <div class="actions trans">
-                                        <a class="link-layer" href="#">&nbsp;</a>
-
-                                        <a href="#" class="actn add-to-favorite" data-toggle="tooltip"
-                                           data-placement="top" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
-                                        <a href="#" class="actn add-to-cart" data-toggle="tooltip" data-placement="top"
-                                           title="Add to Cart"><i class="pe-7s-cart"></i></a>
-                                        <a href="#quick-view-popup" class="actn" data-toggle="tooltip"
-                                           data-placement="top" data-rel="quickview-popup" title="Quick View"><i
-                                                class="pe-7s-look"></i></a>
-                                    </div>
-                                    <a href="#"><img src="assets/images/product5.jpg" alt=""></a>
-                                </figure>
-
-                                <div class="price-wrap">
-                                    <div class="price">
-                                        <ins>$119.00</ins>
-                                    </div>
-                                    <div class="star-rate">
-                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                            class="fa fa-star"></i><i class="fa fa-star-half-full"></i>
-                                    </div>
-                                </div>
-
-                                <h4><a href="#">Appropriately leverage</a></h4>
-                            </li>
-                            <!--product-->
-
-                            <li class="product">
-                                <figure class="img-animi">
-                                    <div class="actions trans">
-                                        <a class="link-layer" href="#">&nbsp;</a>
-
-                                        <a href="#" class="actn add-to-favorite" data-toggle="tooltip"
-                                           data-placement="top" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
-                                        <a href="#" class="actn add-to-cart" data-toggle="tooltip" data-placement="top"
-                                           title="Add to Cart"><i class="pe-7s-cart"></i></a>
-                                        <a href="#quick-view-popup" class="actn" data-toggle="tooltip"
-                                           data-placement="top" data-rel="quickview-popup" title="Quick View"><i
-                                                class="pe-7s-look"></i></a>
-                                    </div>
-                                    <a href="#"><img src="assets/images/product6.jpg" alt=""></a>
+                                    <a href="#"><img src="{{asset('assets/images/product6.jpg')}}" alt=""></a>
                                 </figure>
 
                                 <div class="price-wrap">
@@ -588,7 +583,7 @@
                                     </div>
                                 </div>
 
-                                <h4><a href="#">Intrinsicly develop stand</a></h4>
+                                <h4><a href="#">Mens Shirt</a></h4>
                             </li>
                             <!--product-->
 
@@ -606,7 +601,7 @@
                                            data-placement="top" data-rel="quickview-popup" title="Quick View"><i
                                                 class="pe-7s-look"></i></a>
                                     </div>
-                                    <a href="#"><img src="assets/images/product7.jpg" alt=""></a>
+                                    <a href="#"><img src="{{asset('assets/images/product7.jpg')}}" alt=""></a>
                                 </figure>
 
                                 <div class="price-wrap">
@@ -620,148 +615,7 @@
                                     </div>
                                 </div>
 
-                                <h4><a href="#">Uniquely leverage other's</a></h4>
-                            </li>
-                            <!--product-->
-
-                            <li class="product last flip">
-                                <figure class="img-animi">
-                                    <div class="actions trans">
-                                        <a class="link-layer" href="#">&nbsp;</a>
-
-                                        <a href="#" class="actn add-to-favorite" data-toggle="tooltip"
-                                           data-placement="top" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
-                                        <a href="#" class="actn add-to-cart" data-toggle="tooltip" data-placement="top"
-                                           title="Add to Cart"><i class="pe-7s-cart"></i></a>
-                                        <a href="#quick-view-popup" class="actn" data-toggle="tooltip"
-                                           data-placement="top" data-rel="quickview-popup" title="Quick View"><i
-                                                class="pe-7s-look"></i></a>
-                                    </div>
-                                    <a href="#" class="front"><img src="assets/images/product8.jpg" alt=""></a>
-                                    <a href="#" class="back"><img src="assets/images/product1.jpg" alt=""></a>
-                                </figure>
-
-                                <div class="price-wrap">
-                                    <div class="price">
-                                        <del>$99.00</del>
-                                        <ins>$95.00</ins>
-                                    </div>
-                                    <div class="star-rate">
-                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                            class="fa fa-star"></i><i class="fa fa-star-half-full"></i>
-                                    </div>
-                                </div>
-
-                                <h4><a href="#">Completely optimize</a></h4>
-                            </li>
-                            <!--product-->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--feature item-->
-
-        <div class="fashion-offer sec-mar">
-            <div class="jarallax overlay v-align">
-                <img class="jarallax-img" src="assets/images/parallax1.jpg" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12">
-                            <div class="wrap">
-                                <figure class="offer-girl">
-                                    <img src="assets/images/sale-girl.png" alt="sale offer">
-                                </figure>
-
-                                <div class="col-sm-5 pull-right text-center p-0">
-                                    <h2 class="text-uppercase txt-lg bm-0">big sale offer !</h2>
-                                    <h5 class="bm-30">
-                                        <em>Dynamically create equity invested.</em>
-                                    </h5>
-
-                                    <div class="count-down bm-40" data-end-date="June 2, 2018"></div>
-                                    <!--count down-->
-
-                                    <a class="btn btn-default">View more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--content-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--offer-->
-
-        <div class="trending sec-mar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <div class="title mid-sep"><h2>Trending Products</h2></div>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12 col-xs-12 product-wrap product-slide-wrap">
-                        <ul class="products product-slider">
-                            <li class="product">
-                                <figure class="img-animi">
-                                    <div class="actions trans">
-                                        <a class="link-layer" href="#">&nbsp;</a>
-
-                                        <a href="#" class="actn add-to-favorite" data-toggle="tooltip"
-                                           data-placement="top" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
-                                        <a href="#" class="actn add-to-cart" data-toggle="tooltip" data-placement="top"
-                                           title="Add to Cart"><i class="pe-7s-cart"></i></a>
-                                        <a href="#quick-view-popup" class="actn" data-toggle="tooltip"
-                                           data-placement="top" data-rel="quickview-popup" title="Quick View"><i
-                                                class="pe-7s-look"></i></a>
-                                    </div>
-                                    <a href="#"><img src="assets/images/product1.jpg" alt=""></a>
-                                </figure>
-
-                                <div class="price-wrap">
-                                    <div class="price">
-                                        <del>$189.00</del>
-                                        <ins>$189.00</ins>
-                                    </div>
-                                    <div class="star-rate">
-                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                            class="fa fa-star"></i><i class="fa fa-star-half-full"></i>
-                                    </div>
-                                </div>
-
-                                <h4><a href="#">Appropriately leverage</a></h4>
-                            </li>
-                            <!--product-->
-
-                            <li class="product new flip">
-                                <figure class="img-animi">
-                                    <div class="tag new">new</div>
-                                    <div class="actions trans">
-                                        <a class="link-layer" href="#">&nbsp;</a>
-
-                                        <a href="#" class="actn add-to-favorite" data-toggle="tooltip"
-                                           data-placement="top" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
-                                        <a href="#" class="actn add-to-cart" data-toggle="tooltip" data-placement="top"
-                                           title="Add to Cart"><i class="pe-7s-cart"></i></a>
-                                        <a href="#quick-view-popup" class="actn" data-toggle="tooltip"
-                                           data-placement="top" data-rel="quickview-popup" title="Quick View"><i
-                                                class="pe-7s-look"></i></a>
-                                    </div>
-                                    <a href="#" class="front"><img src="assets/images/product2.jpg" alt=""></a>
-                                    <a href="#" class="back"><img src="assets/images/product12.jpg" alt=""></a>
-                                </figure>
-
-                                <div class="price-wrap">
-                                    <div class="price">
-                                        <ins>$109.00</ins>
-                                    </div>
-                                    <div class="star-rate">
-                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                            class="fa fa-star"></i><i class="fa fa-star-half-full"></i>
-                                    </div>
-                                </div>
-
-                                <h4><a href="#">Enthusiastically build</a></h4>
+                                <h4><a href="#">Ladies full sleeves </a></h4>
                             </li>
                             <!--product-->
 
@@ -778,14 +632,14 @@
                                            data-placement="top" data-rel="quickview-popup" title="Quick View"><i
                                                 class="pe-7s-look"></i></a>
                                     </div>
-                                    <a href="#" class="front"><img src="assets/images/product3.jpg" alt=""></a>
-                                    <a href="#" class="back"><img src="assets/images/product1.jpg" alt=""></a>
+                                    <a href="#" class="front"><img src="{{asset('assets/images/product8.jpg')}}" alt=""></a>
+                                    <a href="#" class="back"><img src="{{asset('assets/images/product1.jpg')}}" alt=""></a>
                                 </figure>
 
                                 <div class="price-wrap">
                                     <div class="price">
-                                        <del>$80.00</del>
-                                        <ins>$75.00</ins>
+                                        <del>$99.00</del>
+                                        <ins>$95.00</ins>
                                     </div>
                                     <div class="star-rate">
                                         <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
@@ -793,7 +647,37 @@
                                     </div>
                                 </div>
 
-                                <h4><a href="#">Objectively reconceptualize</a></h4>
+                                <h4><a href="#">Ladies longline dress</a></h4>
+                            </li>
+                            <!--product-->
+
+                            <li class="product last">
+                                <figure class="img-animi">
+                                    <div class="actions trans">
+                                        <a class="link-layer" href="#">&nbsp;</a>
+
+                                        <a href="#" class="actn add-to-favorite" data-toggle="tooltip"
+                                           data-placement="top" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
+                                        <a href="#" class="actn add-to-cart" data-toggle="tooltip" data-placement="top"
+                                           title="Add to Cart"><i class="pe-7s-cart"></i></a>
+                                        <a href="#quick-view-popup" class="actn" data-toggle="tooltip"
+                                           data-placement="top" data-rel="quickview-popup" title="Quick View"><i
+                                                class="pe-7s-look"></i></a>
+                                    </div>
+                                    <a href="#"><img src="{{asset('assets/images/product17.jpg')}}" alt=""></a>
+                                </figure>
+
+                                <div class="price-wrap">
+                                    <div class="price">
+                                        <ins>$119.00</ins>
+                                    </div>
+                                    <div class="star-rate">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star-half-full"></i>
+                                    </div>
+                                </div>
+
+                                <h4><a href="#">Ladies half jacket</a></h4>
                             </li>
                             <!--product-->
 
@@ -810,7 +694,69 @@
                                            data-placement="top" data-rel="quickview-popup" title="Quick View"><i
                                                 class="pe-7s-look"></i></a>
                                     </div>
-                                    <a href="#"><img src="assets/images/product4.jpg" alt=""></a>
+                                    <a href="#"><img src="{{asset('assets/images/product18.jpg')}}" alt=""></a>
+                                </figure>
+
+                                <div class="price-wrap">
+                                    <div class="price">
+                                        <ins>$109.00</ins>
+                                    </div>
+                                    <div class="star-rate">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star-half-full"></i>
+                                    </div>
+                                </div>
+
+                                <h4><a href="#">Ladies black light dress</a></h4>
+                            </li>
+                            <!--product-->
+
+                            <li class="product sale">
+                                <figure class="img-animi">
+                                    <div class="tag new">sale</div>
+                                    <div class="actions trans">
+                                        <a class="link-layer" href="#">&nbsp;</a>
+
+                                        <a href="#" class="actn add-to-favorite" data-toggle="tooltip"
+                                           data-placement="top" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
+                                        <a href="#" class="actn add-to-cart" data-toggle="tooltip" data-placement="top"
+                                           title="Add to Cart"><i class="pe-7s-cart"></i></a>
+                                        <a href="#quick-view-popup" class="actn" data-toggle="tooltip"
+                                           data-placement="top" data-rel="quickview-popup" title="Quick View"><i
+                                                class="pe-7s-look"></i></a>
+                                    </div>
+                                    <a href="#"><img src="{{asset('assets/images/product19.jpg')}}" alt=""></a>
+                                </figure>
+
+                                <div class="price-wrap">
+                                    <div class="price">
+                                        <del>$90.00</del>
+                                        <ins>$80.00</ins>
+                                    </div>
+                                    <div class="star-rate">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star-half-full"></i>
+                                    </div>
+                                </div>
+
+                                <h4><a href="#">Ladies full sleeves </a></h4>
+                            </li>
+                            <!--product-->
+
+                            <li class="product last">
+                                <figure class="img-animi">
+                                    <div class="actions trans">
+                                        <a class="link-layer" href="#">&nbsp;</a>
+
+                                        <a href="#" class="actn add-to-favorite" data-toggle="tooltip"
+                                           data-placement="top" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
+                                        <a href="#" class="actn add-to-cart" data-toggle="tooltip" data-placement="top"
+                                           title="Add to Cart"><i class="pe-7s-cart"></i></a>
+                                        <a href="#quick-view-popup" class="actn" data-toggle="tooltip"
+                                           data-placement="top" data-rel="quickview-popup" title="Quick View"><i
+                                                class="pe-7s-look"></i></a>
+                                    </div>
+                                    <a href="#" class="front"><img src="{{asset('assets/images/product20.jpg')}}" alt=""></a>
                                 </figure>
 
                                 <div class="price-wrap">
@@ -824,241 +770,156 @@
                                     </div>
                                 </div>
 
-                                <h4><a href="#">Energistically parallel</a></h4>
-                            </li>
-                            <!--product-->
-
-                            <li class="product new flip">
-                                <figure class="img-animi">
-                                    <div class="tag new">new</div>
-                                    <div class="actions trans">
-                                        <a class="link-layer" href="#">&nbsp;</a>
-
-                                        <a href="#" class="actn add-to-favorite" data-toggle="tooltip"
-                                           data-placement="top" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
-                                        <a href="#" class="actn add-to-cart" data-toggle="tooltip" data-placement="top"
-                                           title="Add to Cart"><i class="pe-7s-cart"></i></a>
-                                        <a href="#quick-view-popup" class="actn" data-toggle="tooltip"
-                                           data-placement="top" data-rel="quickview-popup" title="Quick View"><i
-                                                class="pe-7s-look"></i></a>
-                                    </div>
-                                    <a href="#" class="front"><img src="assets/images/product2.jpg" alt=""></a>
-                                    <a href="#" class="back"><img src="assets/images/product6.jpg" alt=""></a>
-                                </figure>
-
-                                <div class="price-wrap">
-                                    <div class="price">
-                                        <ins>$109.00</ins>
-                                    </div>
-                                    <div class="star-rate">
-                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                            class="fa fa-star"></i><i class="fa fa-star-half-full"></i>
-                                    </div>
-                                </div>
-
-                                <h4><a href="#">Dramatically deliver</a></h4>
-                            </li>
-                            <!--product-->
-
-                            <li class="product flip">
-                                <figure class="img-animi">
-                                    <div class="actions trans">
-                                        <a class="link-layer" href="#">&nbsp;</a>
-
-                                        <a href="#" class="actn add-to-favorite" data-toggle="tooltip"
-                                           data-placement="top" title="Add to Wishlist"><i class="pe-7s-like"></i></a>
-                                        <a href="#" class="actn add-to-cart" data-toggle="tooltip" data-placement="top"
-                                           title="Add to Cart"><i class="pe-7s-cart"></i></a>
-                                        <a href="#quick-view-popup" class="actn" data-toggle="tooltip"
-                                           data-placement="top" data-rel="quickview-popup" title="Quick View"><i
-                                                class="pe-7s-look"></i></a>
-                                    </div>
-                                    <a href="#" class="front"><img src="assets/images/product3.jpg" alt=""></a>
-                                    <a href="#" class="back"><img src="assets/images/product1.jpg" alt=""></a>
-                                </figure>
-
-                                <div class="price-wrap">
-                                    <div class="price">
-                                        <del>$80.00</del>
-                                        <ins>$75.00</ins>
-                                    </div>
-                                    <div class="star-rate">
-                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                            class="fa fa-star"></i><i class="fa fa-star-half-full"></i>
-                                    </div>
-                                </div>
-
-                                <h4><a href="#">Conveniently deliver.</a></h4>
+                                <h4><a href="#">Ladies longline dress</a></h4>
                             </li>
                             <!--product-->
                         </ul>
+                        <div class="clearfix"></div>
                     </div>
+                    <!--product wrap-->
+
+                    <div class="bottom-sorting">
+                        <div class="result-count">Showing 1 - 12 of 120 results</div>
+                        <!--result count-->
+
+                        <div class="pagination">
+                            <ul class="page-numbers">
+                                <li><a class="prev page-numbers" href="#">&lt;</a></li>
+                                <li><span class="page-numbers current">1</span></li>
+                                <li><a class="page-numbers" href="#">2</a></li>
+                                <li><a class="page-numbers" href="#">3</a></li>
+                                <li><a class="next page-numbers" href="#">&gt;</a></li>
+                            </ul>
+                        </div>
+                        <!--pegination-->
+                    </div>
+                    <!--bottom sorting-->
                 </div>
-            </div>
-        </div>
-        <!--tranding-->
+                <!--left-->
 
+                <div class="col-md-3 col-sm-3 sidebar">
+                    <div class="sidebar_widget">
+                        <div class="widget_title"><h4>Categories</h4></div>
 
-        <div class="news blog-holder modern bm-50">
-            <div class="container">
-                <div class="title mid-sep text-center"><h2>Latest news</h2></div>
+                        <ul class="detail-cat">
+                            <li><a href="#">Clothings <span class="item-count">[1200]</span></a></li>
+                            <li><a href="#">Accessories <span class="item-count">[590]</span></a></li>
+                            <li><a href="#">Man <span class="item-count">[125]</span></a></li>
+                            <li><a href="#">Woman <span class="item-count">[248]</span></a></li>
+                            <li><a href="#">New arrivals <span class="item-count">[258]</span></a>
+                            <li><a href="#">Shoes <span class="item-count">[587]</span></a></li>
+                            <li><a href="#">Socks <span class="item-count">[35]</span></a></li>
+                            <li><a href="#">Jacket <span class="item-count">[300]</span></a></li>
+                        </ul>
+                    </div>
+                    <!--category-->
 
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="blog-wrap">
-                            <figure class="img-animi">
-                                <a href="#"><img src="assets/images/news1.jpg" alt=""></a>
-                            </figure>
+                    <div class="sidebar_widget price-filter">
+                        <div class="widget_title"><h4>Filter by price</h4></div>
 
-                            <div class="post-wrap">
-                                <div class="entry-info">
-                                    <span class="entry-date pri-bg">aug 10 2017</span>
-                                    <span class="comment-count"><a href="#"><i class="fa fa-comments"></i> 5</a></span>
+                        <div id="price-range"></div>
+                        <input type="hidden" id="amount1">
+                        <input type="hidden" id="amount2">
+
+                        <div class="range-bottom">
+                            <div id="amount"></div>
+                            <button type="submit" class="btn text-uppercase">Filter</button>
+                        </div>
+                        <!--range bottom-->
+                    </div>
+                    <!--price range-->
+
+                    <div class="sidebar_widget color-filter">
+                        <div class="widget_title"><h4>Filter by color</h4></div>
+
+                        <div class="color-filter">
+                            <form>
+                                <div class="check-wrap red">
+                                    <input type="checkbox">
+                                    <label>Red (20)</label>
                                 </div>
+                                <!--red-->
 
-                                <h5 class="post-title">
-                                    <a href="#">Proactively incubate collaboration.</a>
-                                </h5>
+                                <div class="check-wrap black">
+                                    <input type="checkbox">
+                                    <label>Black (100)</label>
+                                </div>
+                                <!--black-->
 
-                                <p>
-                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                                    mus. Donec quam felis, ultricies nec..
-                                </p>
-                            </div>
+                                <div class="check-wrap yellow">
+                                    <input type="checkbox">
+                                    <label>Yellow(20)</label>
+                                </div>
+                                <!--yellow-->
+
+                                <div class="check-wrap blue">
+                                    <input type="checkbox">
+                                    <label>Blue (120)</label>
+                                </div>
+                                <!--blue-->
+                            </form>
                         </div>
                     </div>
-                    <!--single blog-->
+                    <!--color filter-->
 
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="blog-wrap">
-                            <figure class="img-animi">
-                                <a href="#"><img src="assets/images/news2.jpg" alt=""></a>
-                            </figure>
+                    <div class="sidebar_widget size-filter">
+                        <div class="widget_title"><h4>Filter by size</h4></div>
 
-                            <div class="post-wrap">
-                                <div class="entry-info">
-                                    <span class="entry-date pri-bg">aug 10 2017</span>
-                                    <span class="comment-count"><a href="#"><i class="fa fa-comments"></i> 5</a></span>
+                        <div class="size-filter">
+                            <form>
+                                <div class="check-wrap">
+                                    <input type="checkbox">
+                                    <label>L (20)</label>
                                 </div>
+                                <!--red-->
 
-                                <h5 class="post-title">
-                                    <a href="#">Proactively incubate plug-and-play.</a>
-                                </h5>
+                                <div class="check-wrap">
+                                    <input type="checkbox">
+                                    <label>M (80)</label>
+                                </div>
+                                <!--black-->
 
-                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                Donec quam felis, ultricies nec..
-                            </div>
+                                <div class="check-wrap">
+                                    <input type="checkbox">
+                                    <label>S (10)</label>
+                                </div>
+                                <!--yellow-->
+
+                                <div class="check-wrap">
+                                    <input type="checkbox">
+                                    <label>X (100)</label>
+                                </div>
+                                <!--blue-->
+
+                                <div class="check-wrap">
+                                    <input type="checkbox">
+                                    <label>XL (70)</label>
+                                </div>
+                                <!--blue-->
+
+                                <div class="check-wrap">
+                                    <input type="checkbox">
+                                    <label>XS (50)</label>
+                                </div>
+                                <!--blue-->
+                            </form>
                         </div>
                     </div>
-                    <!--single blog-->
-                </div>
+                    <!--size filter-->
 
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="blog-wrap">
-                            <figure class="img-animi">
-                                <a href="#"><img src="assets/images/news3.jpg" alt=""></a>
-                            </figure>
-
-                            <div class="post-wrap">
-                                <div class="entry-info">
-                                    <span class="entry-date pri-bg">aug 10 2017</span>
-                                    <span class="comment-count"><a href="#"><i class="fa fa-comments"></i> 5</a></span>
-                                </div>
-
-                                <h5 class="post-title">
-                                    <a href="#">Proactively plug-and-play collaboration.</a>
-                                </h5>
-
-                                <p>
-                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                                    mus. Donec quam felis, ultricies nec..
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--single blog-->
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="blog-wrap">
-                            <figure class="img-animi">
-                                <a href="#"><img src="assets/images/news4.jpg" alt=""></a>
-                            </figure>
-
-                            <div class="post-wrap">
-                                <div class="entry-info">
-                                    <span class="entry-date pri-bg">aug 10 2017</span>
-                                    <span class="comment-count"><a href="#"><i class="fa fa-comments"></i> 5</a></span>
-                                </div>
-
-                                <h5 class="post-title">
-                                    <a href="#">Proactively incubate ollaboration.</a>
-                                </h5>
-
-                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                Donec quam felis, ultricies nec..
-                            </div>
-                        </div>
-                    </div>
-                    <!--single blog-->
-                </div>
-            </div>
-        </div>
-        <!--news-->
-
-        <div class="subscription layout-2 sec-bg">
-            <div class="container">
-                <div class="row flx-element">
-                    <div class="col-md-7 col-sm-7 text-white">
-                        <h3 class="text-white bm-0"><i class="fa fa-paper-plane"></i> Sign up to Newsletter</h3>
-                        ... and get <strong>$20</strong> coupon for first shopping.
-                    </div>
-
-                    <div class="col-md-5 col-sm-5">
-                        <form action="#">
-                            <div class="form-group">
-                                <input type="email" placeholder="Enter your email address.">
-                            </div>
-
-                            <div class="form-group">
-                                <input type="submit" value="subscribe">
-                            </div>
-                        </form>
+                    <div class="sidebar_widget">
+                        <figure class="img-animi">
+                            <a href="#">
+                                <img src="{{asset('assets/images/shop-sidebar.jpg')}}" alt="">
+                            </a>
+                        </figure>
                     </div>
                 </div>
+                <!--sidebar-->
             </div>
         </div>
     </main>
     <!--main-->
-
-    <div class="modal fade" id="newsletter">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <figure>
-                        <img src="assets/images/newsletter-bg.jpg" alt="">
-                    </figure>
-
-                    <div class="content-hold">
-                        <div class="wrap">
-                            <h2 class="text-uppercase text-white">SIGN UP AND <br> CONNECT TO neostore!</h2>
-                            <h6 class="text-white bm-30">Sign up for Exclusive Updates, New Arrivals and and Discount
-                                offers.</h6>
-
-                            <form>
-                                <div class="form-group bm-0">
-                                    <input type="text" placeholder="Email address">
-                                    <input type="submit" value="Submit">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-    </div>
-    <!-- /.modal -->
 
     <footer>
         <div class="footer-top bg-dark sec-padding">
@@ -1176,44 +1037,44 @@
                     <div class="slide-top">
                         <ul class="qv-single-image single-2">
                             <li>
-                                <figure><img src="assets/images/pdt-single-slide1.jpg" alt=""></figure>
+                                <figure><img src="{{asset('assets/images/pdt-single-slide1.jpg')}}" alt=""></figure>
                             </li>
                             <li>
-                                <figure><img src="assets/images/pdt-single-slide2.jpg" alt=""></figure>
+                                <figure><img src="{{asset('assets/images/pdt-single-slide2.jpg')}}" alt=""></figure>
                             </li>
                             <li>
-                                <figure><img src="assets/images/pdt-single-slide3.jpg" alt=""></figure>
+                                <figure><img src="{{asset('assets/images/pdt-single-slide3.jpg')}}" alt=""></figure>
                             </li>
                             <li>
-                                <figure><img src="assets/images/pdt-single-slide4.jpg" alt=""></figure>
+                                <figure><img src="{{asset('assets/images/pdt-single-slide4.jpg')}}" alt=""></figure>
                             </li>
                             <li>
-                                <figure><img src="assets/images/pdt-single-slide5.jpg" alt=""></figure>
+                                <figure><img src="{{asset('assets/images/pdt-single-slide5.jpg')}}" alt=""></figure>
                             </li>
                             <li>
-                                <figure><img src="assets/images/pdt-single-slide6.jpg" alt=""></figure>
+                                <figure><img src="{{asset('assets/images/pdt-single-slide6.jpg')}}" alt=""></figure>
                             </li>
                         </ul>
                     </div>
 
                     <ul class="qv-single-thumb thumb-2">
                         <li>
-                            <figure><img src="assets/images/pdt-single-slide1.jpg" alt=""></figure>
+                            <figure><img src="{{asset('assets/images/pdt-single-slide1.jpg')}}" alt=""></figure>
                         </li>
                         <li>
-                            <figure><img src="assets/images/pdt-single-slide2.jpg" alt=""></figure>
+                            <figure><img src="{{asset('assets/images/pdt-single-slide2.jpg')}}" alt=""></figure>
                         </li>
                         <li>
-                            <figure><img src="assets/images/pdt-single-slide3.jpg" alt=""></figure>
+                            <figure><img src="{{asset('assets/images/pdt-single-slide3.jpg')}}" alt=""></figure>
                         </li>
                         <li>
-                            <figure><img src="assets/images/pdt-single-slide4.jpg" alt=""></figure>
+                            <figure><img src="{{asset('assets/images/pdt-single-slide4.jpg')}}" alt=""></figure>
                         </li>
                         <li>
-                            <figure><img src="assets/images/pdt-single-slide5.jpg" alt=""></figure>
+                            <figure><img src="{{asset('assets/images/pdt-single-slide5.jpg')}}" alt=""></figure>
                         </li>
                         <li>
-                            <figure><img src="assets/images/pdt-single-slide6.jpg" alt=""></figure>
+                            <figure><img src="{{asset('assets/images/pdt-single-slide6.jpg')}}" alt=""></figure>
                         </li>
                     </ul>
                 </div>
@@ -1363,9 +1224,8 @@
 
 <a href="#" class="back-to-top"><i class="fa fa-long-arrow-up"></i></a>
 
-<!-- jQuery library -->
-
-<script src="assets/js/main.js"></script>
+<script src="{{asset('assets/js/main.js')}}"></script>
 </body>
 
 </html>
+

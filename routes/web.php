@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-
+Route::get('/', 'Shoping\MainController@index');
+Route::get('/blog', 'Shoping\MainController@blog');
+Route::get('/category','Shoping\MainController@category');
+Route::get('/about','Shoping\MainController@about');
+Route::get('/contact','Shoping\MainController@contact');
+Route::get('/{list}','Shoping\MainController@list');
+Route::get('/list/{product?}','Shoping\MainController@product');
 
 
