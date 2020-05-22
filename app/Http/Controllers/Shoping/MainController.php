@@ -46,8 +46,8 @@ class MainController extends Controller
     /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function list($list){
-        return view('shoping.shop',compact('list'));
+    public function list(){
+        return view('shoping.shop');
     }
 
     /**
