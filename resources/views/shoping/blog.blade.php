@@ -1,14 +1,14 @@
 @extends('shoping.layouts.app')
-
+@section('title', 'Blog')
 @section('content')
     <div class="pg-header jarallax overlay parlx-pad sec-mar">
-        <img class="jarallax-img" src="assets/images/page-title3.jpg" alt="">
+        <img class="jarallax-img" src="{{asset('assets/images/page-title3.jpg')}}" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center">
                     <h2>Blog</h2>
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="active">Blog</li>
                     </ul>
                 </div>
@@ -23,7 +23,7 @@
                 <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 col-xs-12 list">
                     <div class="blog-wrap">
                         <figure class="img-animi">
-                            <a href="#"><img src="assets/images/blog-big1.jpg" alt=""></a>
+                            <a href="#"><img src="{{asset('assets/images/blog-big1.jpg')}}" alt=""></a>
                         </figure>
 
                         <div class="entry-info">
@@ -42,12 +42,17 @@
 
                         <div class="content-hold">
                             <p>
-                                Appropriately disseminate compelling partnerships before maintainable expertise. Energistically monetize premium alignments vis-a-vis technically sound expertise. Uniquely integrate front-end infrastructures vis-a-vis functionalized testing procedures. Rapidiously simplify professional infomediaries rather than enterprise partnerships. Objectively negotiate 2.0 expertise via out-of-the-box e-business.
+                                Appropriately disseminate compelling partnerships before maintainable expertise.
+                                Energistically monetize premium alignments vis-a-vis technically sound expertise.
+                                Uniquely integrate front-end infrastructures vis-a-vis functionalized testing
+                                procedures. Rapidiously simplify professional infomediaries rather than enterprise
+                                partnerships. Objectively negotiate 2.0 expertise via out-of-the-box e-business.
                             </p>
                         </div>
                         <!--content-->
 
-                        <a class="btn faa-parent animated-hover">Read more <i class="fa fa-long-arrow-right faa-passing"></i></a>
+                        <a class="btn faa-parent animated-hover">Read more <i
+                                class="fa fa-long-arrow-right faa-passing"></i></a>
                     </div>
                 </div>
                 <!--single blog-->
@@ -55,7 +60,7 @@
                 <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 col-xs-12 list">
                     <div class="blog-wrap">
                         <figure class="img-animi">
-                            <a href="#"><img src="assets/images/blog-big2.jpg" alt=""></a>
+                            <a href="#"><img src="{{asset('assets/images/blog-big2.jpg')}}" alt=""></a>
                         </figure>
 
                         <div class="entry-info">
@@ -74,12 +79,17 @@
 
                         <div class="content-hold">
                             <p>
-                                Appropriately disseminate compelling partnerships before maintainable expertise. Energistically monetize premium alignments vis-a-vis technically sound expertise. Uniquely integrate front-end infrastructures vis-a-vis functionalized testing procedures. Rapidiously simplify professional infomediaries rather than enterprise partnerships. Objectively negotiate 2.0 expertise via out-of-the-box e-business.
+                                Appropriately disseminate compelling partnerships before maintainable expertise.
+                                Energistically monetize premium alignments vis-a-vis technically sound expertise.
+                                Uniquely integrate front-end infrastructures vis-a-vis functionalized testing
+                                procedures. Rapidiously simplify professional infomediaries rather than enterprise
+                                partnerships. Objectively negotiate 2.0 expertise via out-of-the-box e-business.
                             </p>
                         </div>
                         <!--content-->
 
-                        <a class="btn faa-parent animated-hover">Read more <i class="fa fa-long-arrow-right faa-passing"></i></a>
+                        <a class="btn faa-parent animated-hover">Read more <i
+                                class="fa fa-long-arrow-right faa-passing"></i></a>
                     </div>
                 </div>
                 <!--single blog-->
@@ -87,7 +97,7 @@
                 <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 col-xs-12 list">
                     <div class="blog-wrap">
                         <figure class="img-animi">
-                            <a href="#"><img src="assets/images/blog-big3.jpg" alt=""></a>
+                            <a href="#"><img src="{{asset('assets/images/blog-big3.jpg')}}" alt=""></a>
                         </figure>
 
                         <div class="entry-info">
@@ -106,12 +116,17 @@
 
                         <div class="content-hold">
                             <p>
-                                Appropriately disseminate compelling partnerships before maintainable expertise. Energistically monetize premium alignments vis-a-vis technically sound expertise. Uniquely integrate front-end infrastructures vis-a-vis functionalized testing procedures. Rapidiously simplify professional infomediaries rather than enterprise partnerships. Objectively negotiate 2.0 expertise via out-of-the-box e-business.
+                                Appropriately disseminate compelling partnerships before maintainable expertise.
+                                Energistically monetize premium alignments vis-a-vis technically sound expertise.
+                                Uniquely integrate front-end infrastructures vis-a-vis functionalized testing
+                                procedures. Rapidiously simplify professional infomediaries rather than enterprise
+                                partnerships. Objectively negotiate 2.0 expertise via out-of-the-box e-business.
                             </p>
                         </div>
                         <!--content-->
 
-                        <a class="btn faa-parent animated-hover">Read more <i class="fa fa-long-arrow-right faa-passing"></i></a>
+                        <a class="btn faa-parent animated-hover">Read more <i
+                                class="fa fa-long-arrow-right faa-passing"></i></a>
                     </div>
                 </div>
                 <!--single blog-->
@@ -119,7 +134,7 @@
                 <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1 col-xs-12 list">
                     <div class="blog-wrap">
                         <figure class="img-animi">
-                            <a href="#"><img src="assets/images/blog-big4.jpg" alt=""></a>
+                            <a href="#"><img src="{{asset('assets/images/blog-big4.jpg')}}" alt=""></a>
                         </figure>
 
                         <div class="entry-info">
@@ -138,12 +153,17 @@
 
                         <div class="content-hold">
                             <p>
-                                Appropriately disseminate compelling partnerships before maintainable expertise. Energistically monetize premium alignments vis-a-vis technically sound expertise. Uniquely integrate front-end infrastructures vis-a-vis functionalized testing procedures. Rapidiously simplify professional infomediaries rather than enterprise partnerships. Objectively negotiate 2.0 expertise via out-of-the-box e-business.
+                                Appropriately disseminate compelling partnerships before maintainable expertise.
+                                Energistically monetize premium alignments vis-a-vis technically sound expertise.
+                                Uniquely integrate front-end infrastructures vis-a-vis functionalized testing
+                                procedures. Rapidiously simplify professional infomediaries rather than enterprise
+                                partnerships. Objectively negotiate 2.0 expertise via out-of-the-box e-business.
                             </p>
                         </div>
                         <!--content-->
 
-                        <a class="btn faa-parent animated-hover">Read more <i class="fa fa-long-arrow-right faa-passing"></i></a>
+                        <a class="btn faa-parent animated-hover">Read more <i
+                                class="fa fa-long-arrow-right faa-passing"></i></a>
                     </div>
                 </div>
                 <!--single blog-->

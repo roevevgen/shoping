@@ -1,10 +1,11 @@
 @extends('shoping.layouts.app')
-
+@section('title', 'About')
 @section('content')
 
     <div class="abt-banner-wrap">
         <div class="abt-banner jarallax sec-mar">
-            <img class="jarallax-img" src="assets/images/about-banner.jpg" alt="">
+            <img class="jarallax-img" src="{{asset('assets/images/about-banner.jpg')}}" alt="">
+
         </div>
     </div>
     <!--banner-->
@@ -15,11 +16,15 @@
                 <div class="col-md-5 col-sm-5 abt-left">
                     <h2>Who we are</h2>
                     <p>
-                        Phosfluorescently synthesize end-to-end infrastructures without performance based intellectual capital. Completely productivate 2.0 sources for magnetic vortals. Uniquely evisculate robust meta-services via dynamic methods of empowerment.
+                        Phosfluorescently synthesize end-to-end infrastructures without performance based intellectual
+                        capital. Completely productivate 2.0 sources for magnetic vortals. Uniquely evisculate robust
+                        meta-services via dynamic methods of empowerment.
                     </p>
 
                     <p>
-                        Assertively network enterprise best practices vis-a-vis B2B intellectual capital. Continually innovate impactful services whereas ethical imperatives. Energistically integrate client-centric manufactured products for interactive meta-services.
+                        Assertively network enterprise best practices vis-a-vis B2B intellectual capital. Continually
+                        innovate impactful services whereas ethical imperatives. Energistically integrate client-centric
+                        manufactured products for interactive meta-services.
                     </p>
                 </div>
                 <!--left-->
@@ -29,7 +34,7 @@
                         <a href="https://www.youtube.com/watch?v=m_5g_D_iP2s" class="play-btn radius-circle">
                             <i class="pe-7s-play"></i>
                         </a>
-                        <figure><img src="assets/images/video-bg.jpg" alt=""></figure>
+                        <figure><img src="{{asset('assets/images/video-bg.jpg')}}" alt=""></figure>
                     </div>
                 </div>
             </div>
@@ -40,7 +45,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-sm-5 story-fig">
-                        <figure><img src="assets/images/man.png" alt=""></figure>
+                        <figure><img src="{{asset('assets/images/man.png')}}" alt=""></figure>
                     </div>
                     <!--fig-->
 
@@ -48,15 +53,24 @@
                         <div class="content-hold">
                             <h2>Our story</h2>
                             <h6>
-                                <em>Rapidiously productize clicks-and-mortar schemas via magnetic supply chains. Holisticly extend customer directed total linkage with standards compliant best practices. Dramatically monetize prospective paradigms and client-centered catalysts for change.</em>
+                                <em>Rapidiously productize clicks-and-mortar schemas via magnetic supply chains.
+                                    Holisticly extend customer directed total linkage with standards compliant best
+                                    practices. Dramatically monetize prospective paradigms and client-centered catalysts
+                                    for change.</em>
                             </h6>
 
                             <p>
-                                Rapidiously productize clicks-and-mortar schemas via magnetic supply chains. Holisticly extend customer directed total linkage with standards compliant best practices. Dramatically monetize prospective paradigms and client-centered catalysts for change.
+                                Rapidiously productize clicks-and-mortar schemas via magnetic supply chains. Holisticly
+                                extend customer directed total linkage with standards compliant best practices.
+                                Dramatically monetize prospective paradigms and client-centered catalysts for change.
                             </p>
 
                             <p>
-                                Uniquely grow out-of-the-box benefits after performance based data. Completely formulate pandemic relationships after impactful testing procedures. Dynamically incentivize interactive convergence with standards compliant best practices. Phosfluorescently reintermediate effective imperatives vis-a-vis standardized convergence. Appropriately synthesize diverse functionalities and highly efficient web-readiness.
+                                Uniquely grow out-of-the-box benefits after performance based data. Completely formulate
+                                pandemic relationships after impactful testing procedures. Dynamically incentivize
+                                interactive convergence with standards compliant best practices. Phosfluorescently
+                                reintermediate effective imperatives vis-a-vis standardized convergence. Appropriately
+                                synthesize diverse functionalities and highly efficient web-readiness.
                             </p>
                         </div>
                         <!--content hold-->
@@ -113,7 +127,7 @@
                                     <a href="#"><i class="fa fa-instagram"></i></a>
                                 </li>
                             </ul>
-                            <img src="assets/images/team1.jpg" alt="">
+                            <img src="{{asset('assets/images/team1.jpg')}}" alt="">
                         </figure>
 
                         <div class="bottom">
@@ -144,7 +158,7 @@
                                     <a href="#"><i class="fa fa-instagram"></i></a>
                                 </li>
                             </ul>
-                            <img src="assets/images/team2.jpg" alt="">
+                            <img src="{{asset('assets/images/team2.jpg')}}" alt="">
                         </figure>
 
                         <div class="bottom">
@@ -175,7 +189,7 @@
                                     <a href="#"><i class="fa fa-instagram"></i></a>
                                 </li>
                             </ul>
-                            <img src="assets/images/team3.jpg" alt="">
+                            <img src="{{asset('assets/images/team3.jpg')}}" alt="">
                         </figure>
 
                         <div class="bottom">
@@ -206,7 +220,7 @@
                                     <a href="#"><i class="fa fa-instagram"></i></a>
                                 </li>
                             </ul>
-                            <img src="assets/images/team4.jpg" alt="">
+                            <img src="{{asset('assets/images/team4.jpg')}}" alt="">
                         </figure>
 
                         <div class="bottom">

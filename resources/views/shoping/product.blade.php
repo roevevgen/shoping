@@ -1,11 +1,12 @@
 @extends('shoping.layouts.app')
+@section('title', 'Product)
 @section('content')
     <main class="main single-product">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="active">Shop</li>
                     </ul>
                 </div>

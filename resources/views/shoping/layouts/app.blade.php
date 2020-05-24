@@ -1,20 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' name='viewport' />
-    <title>Fly to Cart - Neostore</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link rel="shortcut icon" type="image/png" href="assets/images/fav.png" />
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' name='viewport'/>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>@yield('title') - Интернет магазин</title>
+
+    <script src="{{asset('assets/js/main.js')}}" defer></script>
+
+    <link rel="shortcut icon" type="image/png" href="{{asset('assets/images/fav.png')}}"/>
 
 
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="{{asset('assets/css/main.css')}}" rel="stylesheet">
 
     <!--Google font-->
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800%7CRaleway:300,400,400i,500,500i,600,600i,700,800" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Cutive+Mono%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800%7CRaleway:300,400,400i,500,500i,600,600i,700,800"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +38,8 @@
                         <div class="lang">
                             <div class="dropdown">
                                     <span class="drop-down-toggle">
-                                        <img src="assets/images/flag1.png" alt=""> Eng <i class="fa fa-angle-down"></i>
+                                        <img src="{{asset('assets/images/flag1.png')}}" alt=""> Eng <i
+                                            class="fa fa-angle-down"></i>
                                     </span>
                                 <ul class="drop-link trans">
                                     <li><a href="#" class="bg-dark">English</a></li>
@@ -78,7 +84,8 @@
                                 <ul class="neo-mini-cart">
                                     <li class="item">
                                         <figure class="product-thumb">
-                                            <a href="#"><img src="assets/images/cart-pdt-thumb3.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('assets/images/cart-pdt-thumb3.jpg')}}"
+                                                             alt=""></a>
                                         </figure>
                                         <!--product thumb-->
 
@@ -92,7 +99,8 @@
 
                                     <li class="item">
                                         <figure class="product-thumb">
-                                            <a href="#"><img src="assets/images/cart-pdt-thumb1.jpg" alt=""></a>
+                                            <a href="#"><img src="{{asset('assets/images/cart-pdt-thumb1.jpg')}}"
+                                                             alt=""></a>
                                         </figure>
                                         <!--product thumb-->
 
@@ -127,10 +135,11 @@
             <div class="container">
                 <div class="header-mid">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                        <a class="navbar-brand" href="/"><img src="{{asset('assets/images/logo.png')}}" alt=""></a>
                         <!--<a class="navbar-brand site-brand" href="index.html">neostore</a>-->
 
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -141,111 +150,14 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="menu-item-has-children">
-                                <a href="#">HOME</a>
-                                <ul class="sub-menu">
-                                    <li><a href="index.html">Home V1</a></li>
-                                    <li><a href="home-fashion.html">Home fashion</a></li>
-                                    <li><a href="home-lingerie.html">Home lingerie</a></li>
-                                    <li><a href="electronics.html">Home electronics</a></li>
-                                    <li><a href="home-furniture.html">Home furniture</a></li>
-                                </ul>
-                            </li>
 
-                            <li class="active menu-item-has-children mega-menu">
-                                <a href="#">shop</a>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/category">Shop</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/contact">Contact</a></li>
 
-                                <div class="mega-wrap">
-                                    <div class="row">
-                                        <div class="col-sm-3 menu-item-has-children">
-                                            <h6>Shop pages</h6>
-                                            <ul>
-                                                <li><a href="shop-grid-full.html">Grid full width</a></li>
-                                                <li><a href="shop-list-full.html">List full width</a></li>
-                                                <li><a href="shop-grid-left-sidebar.html">Grid left sidebar</a></li>
-                                                <li><a href="shop-grid-right-sidebar.html">grid right sidebar</a></li>
-                                                <li><a href="shop-list-left-sidebar.html">list left sidebar</a></li>
-                                                <li><a href="shop-list-right-sidebar.html">list right sidebar</a></li>
-                                                <li><a href="single-category.html">single category</a></li>
-                                            </ul>
-                                        </div>
 
-                                        <div class="col-sm-3 menu-item-has-children">
-                                            <h6>Product pages</h6>
-                                            <ul>
-                                                <li><a href="product-single-v1.html">Product single v1</a></li>
-                                                <li><a href="product-single-v2.html">product single v2</a></li>
-                                                <li><a href="product-single-v3.html">product single v3</a></li>
-                                                <li><a href="wishlist.html">wishlist</a></li>
-                                                <li><a href="cart.html">cart</a></li>
-                                                <li><a href="checkout.html">checkout</a></li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col-sm-3 menu-item-has-children">
-                                            <h6>product hover</h6>
-                                            <ul>
-                                                <li><a href="icon-left.html">icon left</a></li>
-                                                <li><a href="icon-right.html">icon right</a></li>
-                                                <li><a href="cart-center.html">cart center</a></li>
-                                                <li><a href="summary-hover.html">hover summary</a></li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col-sm-3 menu-item-has-children">
-                                            <h6>shop features</h6>
-                                            <ul>
-                                                <li><a href="product-single-v1.html">360<sup>&deg;</sup> product view </a></li>
-                                                <li><a href="fly-cart.html">Fly to cart</a></li>
-                                                <li><a href="docking-cart.html">Docking cart</a></li>
-                                                <li><a href="off-canvas-cart.html">Off canvas cart</a></li>
-                                                <li><a href="product-quick-view-custom.html">Quick view custom</a></li>
-                                                <li><a href="sliding-bar.html">sliding bar</a></li>
-                                                <li><a href="cookie-notice.html">Cookie notice</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li><a href="#">women’s</a></li>
-
-                            <li class="menu-item-has-children">
-                                <a href="#">pages</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item-has-children">
-                                        <a href="#">About us</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="about-v1.html">about v1</a></li>
-                                            <li><a href="about-v2.html">about v2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="faq.html">faq</a></li>
-                                    <li><a href="account/dashboard.html">user account</a></li>
-                                    <li><a href="page-title-v2.html">page title v2</a></li>
-                                    <li><a href="404.html">404</a></li>
-                                    <li><a href="landing.html">Coming soon</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="menu-item-has-children">
-                                <a href="#">blog</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-v1.html">blog v1</a></li>
-                                    <li><a href="blog-v2.html">blog-v2</a></li>
-                                    <li><a href="blog-v3.html">blog v3</a></li>
-                                    <li><a href="blog-v4.html">blog-v4</a></li>
-                                    <li><a href="blog-single.html">blog single</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="menu-item-has-children">
-                                <a href="#">contact</a>
-                                <ul class="sub-menu">
-                                    <li><a href="contact-v1.html">contact v1</a></li>
-                                    <li><a href="contact-v2.html">contact v2</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -328,7 +240,8 @@
             <div class="container">
                 <div class="row footer-bottom">
                     <div class="col-md-4 col-sm-4">
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All right reserved
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All right reserved
                     </div>
                     <div class="col-md-4 col-sm-4 cards text-center">
                         <ul class="cards">
@@ -376,44 +289,45 @@
                     <div class="slide-top">
                         <ul class="qv-single-image single-2">
                             <li>
-                                <figure><img src="assets/images/pdt-single-slide1.jpg" alt=""></figure>
+                                <figure><img src="{{asset('assets/images/pdt-single-slide1.jpg')}}" alt=""></figure>
                             </li>
                             <li>
-                                <figure><img src="assets/images/pdt-single-slide2.jpg" alt=""></figure>
+                                <figure><img src="{{asset('assets/images/pdt-single-slide2.jpg')}}" alt=""></figure>
                             </li>
                             <li>
-                                <figure><img src="assets/images/pdt-single-slide3.jpg" alt=""></figure>
+                                <figure><img src="{{asset('assets/images/pdt-single-slide3.jpg')}}" alt=""></figure>
                             </li>
                             <li>
-                                <figure><img src="assets/images/pdt-single-slide4.jpg" alt=""></figure>
+                                <figure><img src="{{asset('assets/images/pdt-single-slide4.jpg')}}" alt=""></figure>
                             </li>
                             <li>
-                                <figure><img src="assets/images/pdt-single-slide5.jpg" alt=""></figure>
+                                <figure><img src="{{asset('assets/images/pdt-single-slide5.jpg')}}" alt=""></figure>
                             </li>
                             <li>
-                                <figure><img src="assets/images/pdt-single-slide6.jpg" alt=""></figure>
+                                <figure><img src="{{asset('assets/images/pdt-single-slide6.jpg')}}" alt=""></figure>
                             </li>
                         </ul>
                     </div>
 
                     <ul class="qv-single-thumb thumb-2">
                         <li>
-                            <figure><img src="assets/images/pdt-single-slide1.jpg" alt=""></figure>
+                            <figure><img src="{{asset('assets/images/pdt-single-slide1.jpg')}}" alt=""></figure>
+                        </li>
+
+                        <li>
+                            <figure><img src="{{asset('assets/images/pdt-single-slide2.jpg')}}" alt=""></figure>
                         </li>
                         <li>
-                            <figure><img src="assets/images/pdt-single-slide2.jpg" alt=""></figure>
+                            <figure><img src="{{asset('assets/images/pdt-single-slide3.jpg')}}" alt=""></figure>
                         </li>
                         <li>
-                            <figure><img src="assets/images/pdt-single-slide3.jpg" alt=""></figure>
+                            <figure><img src="{{asset('assets/images/pdt-single-slide4.jpg')}}" alt=""></figure>
                         </li>
                         <li>
-                            <figure><img src="assets/images/pdt-single-slide4.jpg" alt=""></figure>
+                            <figure><img src="{{asset('assets/images/pdt-single-slide5.jpg')}}" alt=""></figure>
                         </li>
                         <li>
-                            <figure><img src="assets/images/pdt-single-slide5.jpg" alt=""></figure>
-                        </li>
-                        <li>
-                            <figure><img src="assets/images/pdt-single-slide6.jpg" alt=""></figure>
+                            <figure><img src="{{asset('assets/images/pdt-single-slide6.jpg')}}" alt=""></figure>
                         </li>
                     </ul>
                 </div>
@@ -563,9 +477,6 @@
 
 <a href="#" class="back-to-top"><i class="fa fa-long-arrow-up"></i></a>
 
-<!-- jQuery library -->
-
-<script src="{{asset('assets/js/main.js')}}"></script>
 </body>
 
 </html>
