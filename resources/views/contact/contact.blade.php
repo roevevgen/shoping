@@ -1,4 +1,4 @@
-@extends('shoping.layouts.app')
+@extends('layouts.app')
 @section('title', 'Contact')
 @section('content')
 

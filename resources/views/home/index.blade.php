@@ -1,4 +1,4 @@
-@extends('shoping.layouts.app')
+@extends('layouts.app')
 @section('title', 'Home')
 @section('content')
     <div class="hero-banner">

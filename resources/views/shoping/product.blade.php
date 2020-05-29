@@ -1,5 +1,5 @@
-@extends('shoping.layouts.app')
-@section('title', 'Product)
+@extends('layouts.app')
+@section('title', 'Product')
 @section('content')
     <main class="main single-product">
         <div class="container">
@@ -58,7 +58,6 @@
                         <div class="pdt-cat bm-5">
                             <span>Ladies fashion</span>
                         </div>
-
                         <h4>Ladies black full sleeves </h4>
 
                         <div class="price-wrap">

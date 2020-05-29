@@ -1,4 +1,4 @@
-@extends('shoping.layouts.app')
+@extends('layouts.app')
 @section('title', 'Category')
 @section('content')
     <div class="pg-header jarallax overlay parlx-pad sec-mar">
@@ -6,10 +6,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center">
-                    <h2>Shop list left sidebar</h2>
+                    <h2>Category</h2>
                     <ul class="breadcrumb">
                         <li><a href="/">Home</a></li>
-                        <li class="active">Shop</li>
+                        <li class="active">Category</li>
                     </ul>
                 </div>
             </div>
@@ -359,14 +359,14 @@
                         <div class="widget_title"><h4>Categories</h4></div>
 
                         <ul class="detail-cat">
-                            <li><a href="#">Clothings <span class="item-count">[1200]</span></a></li>
-                            <li><a href="#">Accessories <span class="item-count">[590]</span></a></li>
-                            <li><a href="#">Man <span class="item-count">[125]</span></a></li>
-                            <li><a href="#">Woman <span class="item-count">[248]</span></a></li>
-                            <li><a href="#">New arrivals <span class="item-count">[258]</span></a>
-                            <li><a href="#">Shoes <span class="item-count">[587]</span></a></li>
-                            <li><a href="#">Socks <span class="item-count">[35]</span></a></li>
-                            <li><a href="#">Jacket <span class="item-count">[300]</span></a></li>
+                            <li><a href="/category/clothings">Clothings <span class="item-count">[1200]</span></a></li>
+                            <li><a href="/category/accessories">Accessories <span class="item-count">[590]</span></a></li>
+                            <li><a href="/category/man">Man <span class="item-count">[125]</span></a></li>
+                            <li><a href="/category/woman">Woman <span class="item-count">[248]</span></a></li>
+                            <li><a href="/category/new">New arrivals <span class="item-count">[258]</span></a>
+                            <li><a href="/category/shoes">Shoes <span class="item-count">[587]</span></a></li>
+                            <li><a href="/category/socks">Socks <span class="item-count">[35]</span></a></li>
+                            <li><a href="/category/jacket">Jacket <span class="item-count">[300]</span></a></li>
                         </ul>
                     </div>
                     <!--category-->

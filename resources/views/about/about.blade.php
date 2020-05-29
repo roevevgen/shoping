@@ -1,13 +1,23 @@
-@extends('shoping.layouts.app')
+@extends('layouts.app')
 @section('title', 'About')
 @section('content')
 
-    <div class="abt-banner-wrap">
-        <div class="abt-banner jarallax sec-mar">
-            <img class="jarallax-img" src="{{asset('assets/images/about-banner.jpg')}}" alt="">
 
+        <div class="pg-header jarallax overlay parlx-pad sec-mar">
+            <img class="jarallax-img" src="{{asset('assets/images/about-banner.jpg')}}" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <h2>About</h2>
+                        <ul class="breadcrumb">
+                            <li><a href="/">Home</a></li>
+                            <li class="active">About</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+
     <!--banner-->
 
     <main class="main">

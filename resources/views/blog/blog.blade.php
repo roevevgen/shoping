@@ -1,4 +1,4 @@
-@extends('shoping.layouts.app')
+@extends('layouts.app')
 @section('title', 'Blog')
 @section('content')
     <div class="pg-header jarallax overlay parlx-pad sec-mar">

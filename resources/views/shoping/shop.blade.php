@@ -1,4 +1,4 @@
-@extends('shoping.layouts.app')
+@extends('layouts.app')
 @section('title', 'Shop')
 @section('content')
     <div class="pg-header style2 sec-mar">
@@ -6,14 +6,31 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 flx-element wrap">
                     <div class="left">
-                        <h2>Fly to Cart</h2>
-                        <strong>Hover over product and click on Cart Icon</strong>
+                        <h2>@if($list == 'clothings')
+                                Одежда
+                            @elseif($list == 'accessories')
+                                Аксессуары
+                            @elseif($list == 'man')
+                                Мужская одежда
+                            @elseif($list == 'woman')
+                                Женская одежда
+                            @elseif($list == 'new')
+                                Новые поступления
+                            @elseif($list == 'shoes')
+                                Обувь
+                            @elseif($list == 'socks')
+                                Носки
+                            @elseif($list == 'jacket')
+                                Куртка
+                            @endif</h2>
+
                     </div>
                     <!--left-->
 
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li class="active">Cart</li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/category">Category</a></li>
+                        <li class="active">{{$list}}</li>
                     </ul>
                 </div>
             </div>
@@ -483,7 +500,8 @@
                                            data-placement="top" data-rel="quickview-popup" title="Quick View"><i
                                                 class="pe-7s-look"></i></a>
                                     </div>
-                                    <a href="#" class="front"><img src="{{asset('assets/images/product20.jpg')}}" alt=""></a>
+                                    <a href="#" class="front"><img src="{{asset('assets/images/product20.jpg')}}"
+                                                                   alt=""></a>
                                 </figure>
 
                                 <div class="price-wrap">

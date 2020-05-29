@@ -11,28 +11,28 @@ class MainController extends Controller
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index(){
-        return view('shoping.index');
+        return view('home.index');
     }
 
     /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function blog(){
-        return view('shoping.blog');
+        return view('blog.blog');
     }
 
     /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function about(){
-        return view('shoping.about');
+        return view('about.about');
     }
 
     /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function contact(){
-        return view('shoping.contact');
+        return view('contact.contact');
     }
 
 
@@ -46,15 +46,14 @@ class MainController extends Controller
     /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function list(){
-        return view('shoping.shop');
+    public function list($list){
+        return view('shoping.shop',['list'=> $list]);
     }
 
     /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function product($product=null){
-
         return view('shoping.product',['product'=>$product]);
     }
 }
