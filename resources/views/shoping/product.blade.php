@@ -7,7 +7,9 @@
                 <div class="col-md-12 col-sm-12">
                     <ul class="breadcrumb">
                         <li><a href="/">Home</a></li>
-                        <li class="active">Shop</li>
+                        <li><a href="/category">Category</a></li>
+                        <li><a href="/category/list">List</a></li>
+                        <li class="active">Product</li>
                     </ul>
                 </div>
             </div>

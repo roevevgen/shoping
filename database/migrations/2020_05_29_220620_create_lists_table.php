@@ -15,11 +15,10 @@ class CreateListsTable extends Migration
     {
         Schema::create('lists', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('category_id');
             $table->text('title')->nullable();
             $table->text('titles')->nullable();
             $table->decimal('discount',9,2);
-            $table->decimal('price',9,2);
+            $table->decimal('prices',9,2);
             $table->text('description')->nullable();
             $table->string('name');
             $table->string('code');

@@ -34,6 +34,9 @@ class MainController extends Controller
     public function contact(){
         return view('contact.contact');
     }
+    public function products(){
+        return view('shoping.products');
+    }
 
 
     /**

@@ -27,11 +27,6 @@ npm install
 ```bash
 php artisan key:generate
 ```
-**Run the migrations**
-
-```bash
-php artisan migrate
-```
 
 **Seed the database**
 

@@ -1,32 +1,15 @@
 @extends('layouts.app')
-@section('title', 'Shop')
+@section('title', 'Products')
 @section('content')
     <div class="pg-header jarallax overlay parlx-pad sec-mar">
         <img class="jarallax-img" src="{{asset('assets/images/page-title.jpg')}}" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center">
-                    <h2>@if($list == 'clothings')
-                            Одежда
-                        @elseif($list == 'accessories')
-                            Аксессуары
-                        @elseif($list == 'man')
-                            Мужская одежда
-                        @elseif($list == 'woman')
-                            Женская одежда
-                        @elseif($list == 'new')
-                            Новые поступления
-                        @elseif($list == 'shoes')
-                            Обувь
-                        @elseif($list == 'socks')
-                            Носки
-                        @elseif($list == 'jacket')
-                            Куртка
-                        @endif</h2>
+                    <h2>ALL Production</h2>
                     <ul class="breadcrumb">
                         <li><a href="/">Home</a></li>
-                        <li><a href="/category">Category</a></li>
-                        <li class="active">{{$list}}</li>
+                        <li><a href="/products">Products</a></li>
                     </ul>
                 </div>
             </div>

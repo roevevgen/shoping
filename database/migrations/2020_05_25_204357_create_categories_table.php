@@ -15,17 +15,20 @@ class CreateCategoriesTable extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('category_id');
-            $table->text('title')->nullable();
-            $table->text('titles')->nullable();
-            $table->decimal('discount',9,2);
-            $table->decimal('price',9,2);
+            $table->unsignedBigInteger('category_id');
+            $table->string('category');
+            $table->string('category_code');
+            $table->string('item_count');
+            $table->string('title')->nullable();
+            $table->string('titles')->nullable();
+            $table->decimal('discount',8,2);
+            $table->decimal('price',8,2);
             $table->text('description')->nullable();
             $table->string('name');
             $table->string('code');
             $table->string('size');
             $table->string('color');
-            $table->double('price')->default(0);
+            $table->double('prices')->default(0);
             $table->text('image')->nullable();
             $table->timestamps();
         });
