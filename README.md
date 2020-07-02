@@ -29,7 +29,7 @@ composer global require laravel/installer
 npm install
 ```
 
-**Make sure to place Composer's system-wide vendor bin directory in your `<span class="token variable">$PATH</span>`
+**Make sure to place Composer's system-wide vendor bin directory in your $PATH
 so the laravel executable can be located by your system. This directory
 exists in different locations based on your operating system; however,
 some common locations include:**
@@ -42,7 +42,7 @@ some common locations include:**
     GNU / Linux Distributions: $HOME/.config/composer/vendor/bin or $HOME/.composer/vendor/bin
 
 
-```
+
 ````
 
 **Generate encryption key**
