@@ -25,6 +25,6 @@ Route::get('/contact','Shoping\MainController@contact');
 Route::get('/products','Shoping\MainController@products');
 Route::get('/category','Shoping\MainController@category');
 Route::get('/category/{list}','Shoping\MainController@list');
-Route::get('/category/list/{product?}','Shoping\MainController@product');
+Route::get('/category/{list}/{product?}','Shoping\MainController@product');
 
 
