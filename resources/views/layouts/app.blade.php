@@ -241,7 +241,8 @@
             <div class="container">
                 <div class="row footer-bottom">
                     <div class="col-md-4 col-sm-4">
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        Copyright &copy;
+                        @php echo date('Y'); @endphp
                         All right reserved
                     </div>
                     <div class="col-md-4 col-sm-4 cards text-center">
