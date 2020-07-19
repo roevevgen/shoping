@@ -1,5 +1,3 @@
-https://shoping.github.io/public
-
 ## Installation
 
 **Clone the repo**

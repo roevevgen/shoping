@@ -18,13 +18,13 @@
 //    Route::get('/{list}', 'MainController@list')->name('shoping.list');
 //    Route::get('list/{product?}', 'MainController@product')->name('shoping.product');
 //});
-Route::get('/', 'Shoping\MainController@index');
-Route::get('/blog', 'Shoping\MainController@blog');
-Route::get('/about','Shoping\MainController@about');
-Route::get('/contact','Shoping\MainController@contact');
-Route::get('/products','Shoping\MainController@products');
-Route::get('/category','Shoping\MainController@category');
-Route::get('/category/{list}','Shoping\MainController@list');
-Route::get('/category/{list}/{product?}','Shoping\MainController@product');
+Route::get('/', 'Shoping\MainController@index')->name('index');
+Route::get('/blog', 'Shoping\MainController@blog')->name('blog');
+Route::get('/about','Shoping\MainController@about')->name('about');
+Route::get('/contact','Shoping\MainController@contact')->name('contact');
+Route::get('/products','Shoping\MainController@products')->name('products');
+Route::get('/category','Shoping\MainController@category')->name('category');
+Route::get('/category/{list}','Shoping\MainController@list')->name('list');
+Route::get('/category/{list}/{product?}','Shoping\MainController@product')->name('product');
 
 
