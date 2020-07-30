@@ -16,7 +16,7 @@
 
         <div class="price-wrap">
             <div class="price">
-                <del>$189.00</del>
+                <del>$250.00</del>
                 <ins>$189.00</ins>
             </div>
             <div class="star-rate">
